@@ -4,7 +4,9 @@
   "description": "\"package design\"",
   "main": "dist/index.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "build": "tsc",
+    "deploy": "npm publish"
   },
   "scripts": {
     "test": "mocha --timeout 60000 --exit -r ts-node/register test/**/*.spec.ts",
