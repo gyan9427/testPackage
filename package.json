@@ -1,0 +1,27 @@
+{
+  "name": "testpackage",
+  "version": "1.0.0",
+  "description": "\"package design\"",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --timeout 60000 --exit -r ts-node/register test/**/*.spec.ts",
+    "build": "tsc",
+    "deploy": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyan9427/testPackage.git"
+  },
+  "author": "gyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyan9427/testPackage/issues"
+  },
+  "homepage": "https://github.com/gyan9427/testPackage#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@gyan9427"
+  }
+}
